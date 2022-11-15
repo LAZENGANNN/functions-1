@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 #include<cmath>
 #include<ctime>
 using namespace std;
@@ -26,11 +26,19 @@ using namespace std;
 //}
 
 //proc4
-double trianglep(double a) {
-	return(3 * a );
+//double trianglep(double a) {
+//	return(3 * a );
+//}
+//double triangles(double a) {
+//	return(a * a * sqrt(3.0/4.0));
+//}
+
+//proc5
+double rectP(double x1, double x2, double y1, double y2) {
+	return((abs(x1-x2) * 2) + (abs(y1 - y2) * 2));
 }
-double triangles(double a) {
-	return(a * a * sqrt(3.0/4.0));
+double rectS(double x1, double x2, double y1, double y2) {
+	return(abs(x1 - x2) * abs(y1 - y2));
 }
 
 
@@ -67,16 +75,24 @@ double triangles(double a) {
 		}*/
 
 		//proc4
-		for (int i = 1; i <= 3; i++) {
+		/*for (int i = 1; i <= 3; i++) {
 			double a;
-			cout << "������� ������� ������������" << endl;
+			cout << "введите сторону треугольника" << endl;
 			cin >> a;
 			double tP = trianglep(a);
 			double tS = triangles(a);
 			cout << tP << ' ' << tS << endl;
-		}
+		}*/
 
-
+		//proc5
+		 /*for (int i = 1; i <= 3; i++) {
+			double x1,x2,y1,y2;
+			cout << "введите сторону прямоугольника" << endl;
+			cin >> x1 >> x2 >> y1 >> y2 ;
+			double P = rectP(x1,x2,y1,y2);
+			double S = rectS(x1,x2,y1,y2);
+			cout << P << ' ' << S << endl;
+		}*/
 
 	}
 
